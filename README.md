@@ -8,7 +8,7 @@ A growl component for EmberJS that displays notifications and handles dismissal.
 
 ## Installation
 
-`npm install ember-cli-growl --save-dev`
+`npm install --save-dev ember-cli-growl`
 
 ## Usage
 
