@@ -1,0 +1,17 @@
+
+{{growl-manager notifications=growl.notifications}}
+
+<h2 id='title'>Welcome to Ember.js</h2>
+
+<ul>
+  <li><button class="info" {{action 'showInfo'}}>Show an info message</button></li>
+  <li><button class="alert" {{action 'showAlert'}}>Show an alert</button></li>
+  <li><button class="twitch" {{action 'showAlertTwitch'}}>Show an alert that twitches</button></li>
+  <li><button class="three" {{action 'showThreeAlerts'}}>Show identical alerts in a for loop</button></li>
+  <li><button class="error" {{action 'showError'}}>Show an error</button></li>
+  <li><button class="dismiss" {{action 'showErrorClick'}}>An error that must be clicked</button></li>
+</ul>
+
+<div class="boxed">
+{{outlet}}
+</div>

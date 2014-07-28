@@ -1,0 +1,55 @@
+
+.growl-manager {
+  position: absolute;
+  top: 150px;
+  z-index: 1000;
+  width: 400px;
+  margin-left: -200px;
+  text-align: left;
+  left: 50%;
+}
+
+.growl-instance {
+  width: 300px;
+  margin-left: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: inline-block;
+  background-color: #f7f7f7;
+  border: 2px solid #d8d8d8;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 0 #555555;
+  cursor: pointer;
+}
+
+.growl-instance img {
+  float: left;
+  width: 50px;
+  margin: 20px 0 0 125px;
+}
+
+.growl-instance .message-area  {
+  float: left;
+  width: 265px;
+  margin: 15px 0 15px 20px;
+}
+
+.growl-instance .message-area h1 {
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .growl-instance {
+    width: 400px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .growl-instance .message-area {
+    width: 285px;
+  }
+
+  .growl-instance img {
+    margin: 20px 0 20px 20px;
+  }
+}
