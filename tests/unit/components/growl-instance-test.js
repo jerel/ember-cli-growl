@@ -24,11 +24,13 @@ test('assert that the notification type is reflected as a classname', function()
 });
 
 test('assert that the instance will close when clicked', function() {
-  expect(2);
+  expect(3);
 
   var subject = this.subject();
+  subject.set('notification', testNotification);
   subject.sendAction = function(name, value) {
     equal(name, 'action', 'The parent action was called');
+    equal(value, testNotification, 'The notification is passed to the parent action');
   };
 
   subject.click();
