@@ -46,6 +46,8 @@ Message types:
  * Default: `false`
  * If set to `true` the message will animate.
 
+To override the default CSS add `app/styles/components/growl-manager.css` in your app. To override the HTML for a growl instance add `app/templates/components/growl-instance.hbs`
+
 ## Authors
 
 * [Jerel Unruh](http://twitter.com/jerelunruh/)
