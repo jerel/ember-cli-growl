@@ -4,7 +4,7 @@ A growl component for EmberJS that displays notifications and handles dismissal.
 
 [Live Demo](http://growl.jerel.co/)
 
-[![Build Status](https://travis-ci.org/ngenworks/ember-cli-growl.svg?branch=master)](https://travis-ci.org/ngenworks/ember-cli-growl)
+[![Build Status](https://travis-ci.org/jerel/ember-cli-growl.svg?branch=master)](https://travis-ci.org/jerel/ember-cli-growl)
 
 ## Installation
 
@@ -55,6 +55,6 @@ To override the default CSS add `app/styles/components/growl-manager.css` in you
 
 ## Legal
 
-Copyright (c) 2014 nGen Works Company and contributors
+Copyright (c) 2014 Jerel Unruh
 
 [Licensed under the MIT license](http://www.opensource.org/licenses/mit-license.php)
