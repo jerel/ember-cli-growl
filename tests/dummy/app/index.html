@@ -7,7 +7,7 @@
     <meta name="description" content="Show growl notifications from routes or controllers. Optionally require users to click to dismiss notices.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{BASE_TAG}}
+    {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/dummy.css">
@@ -21,14 +21,9 @@
     </style>
   </head>
   <body>
-    <script>
-      window.DummyENV = {{ENV}};
-      window.EmberENV = window.DummyENV.EmberENV;
-    </script>
+    {{content-for 'body'}}
+
     <script src="assets/vendor.js"></script>
     <script src="assets/dummy.js"></script>
-    <script>
-      window.Dummy = require('dummy/app')['default'].create(DummyENV.APP);
-    </script>
   </body>
 </html>
