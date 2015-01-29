@@ -15,14 +15,6 @@ test('assert that the element class exists', function() {
   ok(this.subject().classNames.indexOf('growl-instance') > -1, 'CSS class exists');
 });
 
-test('assert that the notification type is reflected as a classname', function() {
-  expect(1);
-  var subject = this.subject();
-
-  subject.set('notification', testNotification);
-  equal(subject._classStringForProperty('type'), 'error', 'The instance has a class of error');
-});
-
 test('assert that the instance will close when clicked', function() {
   expect(3);
 
