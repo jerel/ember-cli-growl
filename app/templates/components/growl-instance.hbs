@@ -1,28 +1,28 @@
 
-{{#unboundIf notification.isError}}
+{{#if notification.isError}}
   <img src="../img/error.svg" alt="Error"/>
-{{/unboundIf}}
+{{/if}}
 
-{{#unboundIf notification.isAlert}}
+{{#if notification.isAlert}}
   <img src="../img/alert.svg" alt="Alert"/>
-{{/unboundIf}}
+{{/if}}
 
-{{#unboundIf notification.isInfo}}
+{{#if notification.isInfo}}
   <img src="../img/info.svg" alt="Info"/>
-{{/unboundIf}}
+{{/if}}
 
 <div class="message-area">
-  {{#unboundIf notification.isError}}
+  {{#if notification.isError}}
     <h1>Uh oh.</h1>
-  {{/unboundIf}}
+  {{/if}}
 
-  {{#unboundIf notification.isAlert}}
+  {{#if notification.isAlert}}
     <h1>Attention!</h1>
-  {{/unboundIf}}
+  {{/if}}
 
-  {{#unboundIf notification.isInfo}}
+  {{#if notification.isInfo}}
     <h1>Hey!</h1>
-  {{/unboundIf}}
+  {{/if}}
 
   <div class="message">
     {{{notification.content}}}
