@@ -12,17 +12,17 @@ module('Acceptance: Main', {
   }
 });
 
-test('testing that a growl message is added and closes when clicked', function() {
+test('testing that a growl message is added and closes when clicked', function(assert) {
   visit('/');
-
-  $('.info').click();
-  equal(find('.growl-instance').length, 1, 'The component\'s element exists');
-  $('.growl-instance').click();
-  equal(find('.growl-instance').length, 0, 'The info message has closed');
-
-  $('.alert').click();
-  equal(find('.growl-instance').length, 1, 'The alert message element exists');
-  Ember.run.later(function() {
-    equal(find('.growl-instance').length, 0, 'The alert message has closed via timeout');
-  }, 6000);
+  andThen(() => {
+    $('.info').click();
+    assert.equal(find('.growl-instance').length, 1, 'The component\'s element exists');
+    $('.growl-instance').click();
+    assert.equal(find('.growl-instance').length, 0, 'The info message has closed');
+    $('.alert').click();
+    assert.equal(find('.growl-instance').length, 1, 'The alert message element exists');
+    Ember.run.later(function() {
+      assert.equal(find('.growl-instance').length, 0, 'The alert message has closed via timeout');
+    }, 6000);
+  });
 });
