@@ -1,4 +1,4 @@
 
-{{#each notification in notifications}}
+{{#each notifications as |notification|}}
   {{growl-instance action="dismiss" notification=notification}}
 {{/each}}
